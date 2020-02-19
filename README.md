@@ -26,5 +26,5 @@ var circunferencia = 5
  4. Crea un arreglo de numero en rango del 1-1000 en pasos de 5 en 5
  5. Cuales son los elementos unicos de la lista Lista(1,3,3,4,6,7,3,7) utilice conversion a conjuntos
  6. Crea una mapa mutable llamado nombres que contenga lo siguiente: "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27"
- 6a . Imprime todas la llaves del mapa
- 6b . Agrega el siguiente valor al mapa("Miguel", 23)
+ 6a. Imprime todas la llaves del mapa
+ 6b. Agrega el siguiente valor al mapa("Miguel", 23)
