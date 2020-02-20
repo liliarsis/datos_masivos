@@ -28,14 +28,16 @@ sqrt(area/Pi)
 
 2. Develop an algorithm in scala that tells me if a number is prime
 ```
-def numPrime(n: Int): Boolean = {
-    for(i <- 2.to(n/2)){
-        if(n % i == 0) return false
+def isPrime(num:Int): Boolean = {
+    for(n <- Range(2, num)){
+        if(num%n == 0){
+            return false
+        }
     }
-    true
+    return true
 }
-numPrime(17) //true
-numPrime(15) //false
+isPrime(17) //true
+isPrime(15) //false
 ```
 
 3. Given the variable bird = "tweet", use string interpolation to print "Estoy ecribiendo un tweet"
