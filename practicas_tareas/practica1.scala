@@ -11,7 +11,15 @@ var area = 8
 sqrt(area/Pi) 
 
 //2. Desarrollar un algoritmo en scala que me diga si un numero es primo
-
+def numPrime(n: Int): Boolean = {
+    for(i <- 2.to(n/2)){
+        if(n % i == 0) return false
+    }
+    true
+}
+numPrime(17) //true
+numPrime(15) //false
+                                                
 //3. Dada la variable bird = "tweet", utiliza interpolacion de string para
 //   imprimir "Estoy ecribiendo un tweet"
 val bird = "tweet"
