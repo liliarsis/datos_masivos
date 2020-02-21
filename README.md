@@ -81,7 +81,7 @@ val lista2 ="verde"::"amarillo"::"azul"::"naranja"::"perla" ::lista
 3. Bring the "verde", "amarillo", "azul" items from "lista"
 
 ```
-lista2
+lista2.slice(0,3)
 ```
 
 4. Create a number array in the 1-1000 range in 5-in-5 steps
@@ -98,9 +98,11 @@ val lista=Set(1,3,3,4,6,7,3,7)
 6a. Print all map keys
 6b. Add the following value to the map ("Miguel", 23)
 
+```
 val nombres = Map(("jose", 20), ("Luis", 24), ("Ana", 23),("Susana",27))
 nombres.keys
 nombres + ("Miguel" ->23)
+```
 
 ## Exercise 3 Fibonacci
 
