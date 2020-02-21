@@ -75,22 +75,32 @@ var lista: List[String] = List("rojo", "blanco", "negro")
 
 2. Add 5 more items to "lista" "verde", "amarillo", "azul", "naranja", "perla"
 ```
-val v = "verde" :: lista
-val am = "amarillo" :: lista
-val az = "azul" :: lista
-val n = "naranja" :: lista
-val p = "perla" :: lista
+val lista2 ="verde"::"amarillo"::"azul"::"naranja"::"perla" ::lista
 ```
 
 3. Bring the "verde", "amarillo", "azul" items from "lista"
+
+```
+lista2
+```
+
 4. Create a number array in the 1-1000 range in 5-in-5 steps
 ```
 val pasos = List.range(1, 1000, 5)
 ```
 5. What are the unique elements of the List lista (1,3,3,4,6,7,3,7) use conversion to sets
+
+```
+val lista=Set(1,3,3,4,6,7,3,7)
+```
+
 6. Create a mutable map called names that contains the following: "Jose", 20, "Luis", 24, "Ana", 23, "Susana", "27"
 6a. Print all map keys
 6b. Add the following value to the map ("Miguel", 23)
+
+val nombres = Map(("jose", 20), ("Luis", 24), ("Ana", 23),("Susana",27))
+nombres.keys
+nombres + ("Miguel" ->23)
 
 ## Exercise 3 Fibonacci
 
