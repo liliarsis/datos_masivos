@@ -104,7 +104,7 @@ nombres.keys
 nombres + ("Miguel" ->23)
 ```
 
-## Exercise 3 Fibonacci
+## Exercise 3
 
 create the Fibonacci algorithm in 5 different ways
 
