@@ -9,6 +9,7 @@ Scala is a general-purpose programming language providing support for functional
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3 Fibonacci](#exercise-3)
+- [Investigation 1](#investigation-1)
 - [Collaborators](#collaborators)
 
 ## Exercise 1
@@ -122,6 +123,13 @@ def fib(n:Int):Int = {
 
 fib(5)
 ```
+
+## Investigation 1
+### What is Pearson correlation?
+Correlation coefficients are used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficient: Pearson’s correlation (also called Pearson’s R) is a correlation coefficient commonly used in linear regression. The full name is the Pearson Product Moment Correlation (PPMC). It shows the linear relationship between two sets of data. 
+### Real life example
+Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
+
 
 ## Collaborators
 * **Manuel Orozco** - [Github](https://github.com/manuelorozcotoro)
