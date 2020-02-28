@@ -130,6 +130,9 @@ Correlation coefficients are used in statistics to measure how strong a relation
 ### Real life example
 Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
 
+## References
+Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps
+[statisticshowto](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/)
 
 ## Collaborators
 * **Manuel Orozco** - [Github](https://github.com/manuelorozcotoro)
