@@ -1,7 +1,7 @@
 
-Develop a function called diagonalDifference in a scrip with
+/* Develop a function called diagonalDifference in a scrip with
 the programming language scala. This must return an integer
-that represents the difference of the absolute diagonal.
+that represents the difference of the absolute diagonal.*/
 
 
 def diagonalDifference() = {
