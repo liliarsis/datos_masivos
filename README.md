@@ -11,6 +11,7 @@ Scala is a general-purpose programming language providing support for functional
 - [Exercise 3 Fibonacci](#exercise-3)
 - [What is Pearson Correlation](#investigation-1)
 - [What is Variance?](#investigation-2)
+- [20 functions](#exercise-4)
 - [Collaborators](#collaborators)
 
 ## Exercise 1
@@ -130,6 +131,63 @@ fib(5)
 Correlation coefficients are used in statistics to measure how strong a relationship is between two variables. There are several types of correlation coefficient: Pearson’s correlation (also called Pearson’s R) is a correlation coefficient commonly used in linear regression. The full name is the Pearson Product Moment Correlation (PPMC). It shows the linear relationship between two sets of data. 
 ### Real life example
 Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
+
+## Exercise 4
+### 20 functions
+
+import org.apache.spark.sql.SparkSession
+
+val spark = SparkSession.builder().getOrCreate()
+
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("Netflix_2011_2016.csv")
+
+df.printSchema()
+
+df.show()
+
+//1
+df.describe ("High").show //Describe los valores estadisticos de la columna seleccionada
+//2 
+df.select ("High","Close").show // Despliega los valores relacionados de las columnas consultadas.
+//3 
+df.select ("Open","Low").filter("Close < 480").show // Despliega la colummnas relacionadas y seleccionadas y pone un filtro para solo desplegar las que sean menor a 480
+//4 
+df.groupBy ("Open").show
+//5
+df.first //   retorna la primera columna del dataframe
+//6 
+df.columns // Retorna las columnas de dataframe
+//7 
+val df2 = df.withColumn("HV Ratio", df("High")+df("Volume")) // Agrega una columna que deriva de la columna high y Volume
+//8 
+df.select(min("Volume")).show() // Optiene el min de la columna volume 
+//9 
+df.select(max("Volume")).show() // Optiene el max de la columna volume
+//10
+val df2 = df.withColumn("Year", year(df("Date"))) // Crea la columa año apartir de la columna date
+// 11 
+val df3 = df.withColumn("Month", month(df("Date"))) // Crea la columna mes apartir de la columna date
+// 12 
+val df3 = df.withColumn("Day", dayofmonth(df("Date"))) // crea la columna dia apartir de la columna mes y date
+// 13
+al df3 = df.withColumn("Day", dayofyear(df("Date"))) // Crea la columna dia apartir de la columna año
+// 14 
+df.select(corr($"High", $"Volume")).show() // retorna la correlacion entre la columna High y Volume
+// 15 
+df.select($"High").take(1) // Toma 1 columna de de la columna
+// 16 
+df.select("High").repartition().show() //Reparticia la columna seleccionada
+// 17 
+df.sort($"High".asc).show() // Sortea la columa High
+// 18 
+df.select(avg("High")).show() // Muestra el promedio de la columna high 
+// 19 
+df.filter($"Close" < 480 && $"High" < 480).collectAsList() //crea una lista apartir de una coleccion. 
+
+//20 
+
+df.select(last_day(df("Date"))).show() // retorna el ultimo dia de la columna date 
+
 
 ## Investigation 2
 ### What is Variance?
