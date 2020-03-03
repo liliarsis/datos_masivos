@@ -9,7 +9,8 @@ Scala is a general-purpose programming language providing support for functional
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3 Fibonacci](#exercise-3)
-- [Investigation 1](#investigation-1)
+- [What is Pearson Correlation](#investigation-1)
+- [What is Variance?](#investigation-2)
 - [Collaborators](#collaborators)
 
 ## Exercise 1
@@ -135,9 +136,9 @@ Pearson correlation is used in thousands of real life situations. For example, s
 Variance (σ2) in statistics is a measurement of the spread between numbers in a data set. That is, it measures how far each number in the set is from the mean and therefore from every other number in the set.
 Variance is calculated by taking the differences between each number in the data set and the mean, then squaring the differences to make them positive, and finally dividing the sum of the squares by the number of values in the data set.
 ## References
-Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps
+- Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps
 [https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/)
-Using the Variance Equation. Adam Hayes - [https://www.investopedia.com/terms/v/variance.asp](https://www.investopedia.com/terms/v/variance.asp)
+- Using the Variance Equation. Adam Hayes - [https://www.investopedia.com/terms/v/variance.asp](https://www.investopedia.com/terms/v/variance.asp)
 
 ## Collaborators
 * **Manuel Orozco** - [Github](https://github.com/manuelorozcotoro)
