@@ -130,9 +130,14 @@ Correlation coefficients are used in statistics to measure how strong a relation
 ### Real life example
 Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
 
+## Investigation 2
+### What is Variance?
+Variance (σ2) in statistics is a measurement of the spread between numbers in a data set. That is, it measures how far each number in the set is from the mean and therefore from every other number in the set.
+Variance is calculated by taking the differences between each number in the data set and the mean, then squaring the differences to make them positive, and finally dividing the sum of the squares by the number of values in the data set.
 ## References
 Correlation Coefficient: Simple Definition, Formula, Easy Calculation Steps
-[statisticshowto](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/)
+[https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/correlation-coefficient-formula/)
+Using the Variance Equation. Adam Hayes - [https://www.investopedia.com/terms/v/variance.asp](https://www.investopedia.com/terms/v/variance.asp)
 
 ## Collaborators
 * **Manuel Orozco** - [Github](https://github.com/manuelorozcotoro)
