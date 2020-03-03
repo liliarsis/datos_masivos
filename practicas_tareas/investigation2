@@ -1,0 +1,12 @@
+# What is Variance?
+
+Variance (σ2) in statistics is a measurement of the spread between numbers in a data set. 
+That is, it measures how far each number in the set is from the mean and therefore from every other number in the set. 
+Variance is calculated by taking the differences between each number in the data set and the mean, 
+then squaring the differences to make them positive, 
+and finally dividing the sum of the squares by the number of values in the data set.
+
+# Real life example
+In investing, the variance of the returns among assets in a portfolio is analyzed as a means of achieving the best asset allocation. 
+The variance equation, in financial terms, is a formula for comparing the performance of the elements 
+of a portfolio against each other and against the mean.
