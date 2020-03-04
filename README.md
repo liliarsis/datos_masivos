@@ -309,6 +309,7 @@ Variance (σ2) in statistics is a measurement of the spread between numbers in a
 Variance is calculated by taking the differences between each number in the data set and the mean, then squaring the differences to make them positive, and finally dividing the sum of the squares by the number of values in the data set.
 
 ## Evaluation 2
+Respoding to Scala Spark questions with the Netflix CSV file
 ```
 //1 Se inicia sesion de spark 
 import org.apache.spark.sql.SparkSession
