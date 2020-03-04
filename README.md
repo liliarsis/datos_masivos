@@ -229,65 +229,45 @@ df.printSchema()
 
 df.show()
 
-1.
-df.describe ("High").show //Describe los valores estadisticos de la columna seleccionada
+df.describe ("High").show //1 Describe los valores estadisticos de la columna seleccionada
 
-2. 
-df.select ("High","Close").show // Despliega los valores relacionados de las columnas consultadas.
+df.select ("High","Close").show //2 Despliega los valores relacionados de las columnas consultadas.
 
-3. 
-df.select ("Open","Low").filter("Close < 480").show // Despliega la colummnas relacionadas y seleccionadas y pone un filtro para solo desplegar las que sean menor a 480
+df.select ("Open","Low").filter("Close < 480").show //3 Despliega la colummnas relacionadas y seleccionadas y pone un filtro para solo desplegar las que sean menor a 480
 
-4. 
-df.groupBy ("Open").show
+df.groupBy ("Open").show //4 Agrupa la columna
 
-5.
-df.first //   retorna la primera columna del dataframe
+df.first //5 Retorna la primera columna del dataframe
 
-6. 
-df.columns // Retorna las columnas de dataframe
+df.columns //6 Retorna las columnas de dataframe
 
-7. 
-val df2 = df.withColumn("HV Ratio", df("High")+df("Volume")) // Agrega una columna que deriva de la columna high y Volume
+val df2 = df.withColumn("HV Ratio", df("High")+df("Volume")) //7 Agrega una columna que deriva de la columna high y Volume
 
-.8 
-df.select(min("Volume")).show() // Optiene el min de la columna volume 
+df.select(min("Volume")).show() //8 Optiene el min de la columna volume 
 
-9. 
-df.select(max("Volume")).show() // Optiene el max de la columna volume
+df.select(max("Volume")).show() //9 Obtiene el max de la columna volume
 
-10.
-val df2 = df.withColumn("Year", year(df("Date"))) // Crea la columa año apartir de la columna date
+val df2 = df.withColumn("Year", year(df("Date"))) //10 Crea la columa año apartir de la columna date
 
-11. 
-val df3 = df.withColumn("Month", month(df("Date"))) // Crea la columna mes apartir de la columna date
+val df3 = df.withColumn("Month", month(df("Date"))) //11 Crea la columna mes apartir de la columna date
 
-12. 
-val df3 = df.withColumn("Day", dayofmonth(df("Date"))) // crea la columna dia apartir de la columna mes y date
+val df3 = df.withColumn("Day", dayofmonth(df("Date"))) //12 crea la columna dia apartir de la columna mes y date
 
-13.
-al df3 = df.withColumn("Day", dayofyear(df("Date"))) // Crea la columna dia apartir de la columna año
+val df3 = df.withColumn("Day", dayofyear(df("Date"))) //13 Crea la columna dia apartir de la columna año
+ 
+df.select(corr($"High", $"Volume")).show() //14 retorna la correlacion entre la columna High y Volume
 
-14. 
-df.select(corr($"High", $"Volume")).show() // retorna la correlacion entre la columna High y Volume
+df.select($"High").take(1) //15 Toma 1 columna de de la columna
+ 
+df.select("High").repartition().show() //16 Reparticia la columna seleccionada
 
-15. 
-df.select($"High").take(1) // Toma 1 columna de de la columna
+df.sort($"High".asc).show() //17 Sortea la columa High
 
-16. 
-df.select("High").repartition().show() //Reparticia la columna seleccionada
+df.select(avg("High")).show() //18 Muestra el promedio de la columna high 
 
-17. 
-df.sort($"High".asc).show() // Sortea la columa High
+df.filter($"Close" < 480 && $"High" < 480).collectAsList() //19 crea una lista apartir de una coleccion. 
 
-18. 
-df.select(avg("High")).show() // Muestra el promedio de la columna high 
-
-19. 
-df.filter($"Close" < 480 && $"High" < 480).collectAsList() //crea una lista apartir de una coleccion. 
-
-20. 
-df.select(last_day(df("Date"))).show() // retorna el ultimo dia de la columna date 
+df.select(last_day(df("Date"))).show() //20 retorna el ultimo dia de la columna date 
 ```
 ## Exercise 5
 ### Apply scala functions to Diamonds.CSV
