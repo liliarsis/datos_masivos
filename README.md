@@ -10,6 +10,8 @@ Scala is a general-purpose programming language providing support for functional
 - [Exercise 2](#exercise-2)
 - [Exercise 3 Fibonacci](#exercise-3)
 - [Evaluation 1](#evaluation-1)
+- [Exercise 4](#exercise-4)
+- [Exercise 5](#exercise-5)
 - [What is Pearson Correlation](#investigation-1)
 - [What is Variance?](#investigation-2)
 - [20 functions](#exercise-4)
@@ -214,7 +216,7 @@ Correlation coefficients are used in statistics to measure how strong a relation
 Pearson correlation is used in thousands of real life situations. For example, scientists in China wanted to know if there was a relationship between how weedy rice populations are different genetically. The goal was to find out the evolutionary potential of the rice. Pearson’s correlation between the two groups was analyzed. It showed a positive Pearson Product Moment correlation of between 0.783 and 0.895 for weedy rice populations. This figure is quite high, which suggested a fairly strong relationship.
 
 ## Exercise 4
-### 20 functions
+### 20 Scala functions
 
 ```
 import org.apache.spark.sql.SparkSession
@@ -287,6 +289,38 @@ df.filter($"Close" < 480 && $"High" < 480).collectAsList() //crea una lista apar
 20. 
 df.select(last_day(df("Date"))).show() // retorna el ultimo dia de la columna date 
 ```
+## Exercise 5
+### Apply scala functions to Diamonds.CSV
+import org.apache.spark.sql.SparkSession
+
+val spark = SparkSession.builder().getOrCreate()
+
+val df = spark.read.option("header", "true").option("inferSchema","true")csv("P2-Mispriced-Diamonds.csv")
+
+df.select(max("Price")).show() //Muestra el valor maximo de la columna Price
+
+df.select(min("Price")).show() // Muestra el valor minimo de la columna Price
+
+df.select(variance("Price")).show() //Muestra la varianza de la columna Price
+
+df.select(stddev("Price")).show() // Muestra la desviacion estandar de la columna Price
+
+df.select(first("Price")).show() // Muestra la primer fila
+
+df.select(last("Price")).show() // Muestra la ultima fila
+
+df.select(mean("Price")).show() //Muestra la media de la columa
+
+df.select(length("Price")).show() //Muestra el tamano de la columna
+
+df.select(avg("Price")).show() //Muestra el promedio de la columna
+
+df.groupBy("Company").count().show() //Agrupa la columna
+
+df.select(sum("Sales")).show() //Muestra la sumatoria de Sales
+
+df.select(approx_count_distinct("Price")).show() //Muestra un recuento aproximado de elementos
+
 
 ## Investigation 2
 ### What is Variance?
