@@ -291,6 +291,7 @@ df.select(last_day(df("Date"))).show() // retorna el ultimo dia de la columna da
 ```
 ## Exercise 5
 ### Apply scala functions to Diamonds.CSV
+```
 import org.apache.spark.sql.SparkSession
 
 val spark = SparkSession.builder().getOrCreate()
@@ -320,7 +321,7 @@ df.groupBy("Company").count().show() //Agrupa la columna
 df.select(sum("Sales")).show() //Muestra la sumatoria de Sales
 
 df.select(approx_count_distinct("Price")).show() //Muestra un recuento aproximado de elementos
-
+```
 
 ## Investigation 2
 ### What is Variance?
