@@ -20,15 +20,16 @@ df.describe().show()
 
 //7 Crea un nuevo dataframe con una columna nueva llamada HV Ratio, 
 // a partir de las columnas High y Volume
-val df2 = df.withColumn("HV Ratio", df("High")+df("Volume"))
+val df2 = df.withColumn("HV Ratio", df("High")/df("Volume"))
 
 //8 Dia con el pico mas alto de la columna Close
 val dfmax = df.orderBy($"Close".desc)// primero ordena la columna Close
 
 dfmax.select("Date", "Close").first()//muestra la primera fila
 
-//9 Muestra la media de la columna Close
-df.select(mean("Close")).show()
+//9 Significado de la columna close 
+//R= La columna Close tiene los datos numericos del cierre de ventas de Netflix
+//Muestra la media de la columna Close: df.select(mean("Close")).show()
 
 //10 Maximo y minimo de la columna Volume
 df.select(min("Volume"),max("Volume")).show()
