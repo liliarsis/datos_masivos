@@ -8,7 +8,7 @@ In this section we will see algorithms for classification for Big Data. We can s
 - [Homework 1](#homework-1)
 - [Homework 2](#homework-2)
 - [Homework 3](#homework-3)
-- [Practice 1](#practice-1)
+- [Practice](https://github.com/liliarsis/datos_masivos/tree/unit2/practicas_tareas)
 - [Evaluation](#evaluation)
 - [Sources](#sources)
 - [Collaborators](#collaborators)
