@@ -83,7 +83,111 @@ MLlib represents such a workflow as a Pipeline, which consists of a sequence of 
 A confusion matrix, also known as an error matrix, is a specific table layout that allows visualization of the performance of an algorithm, typically a supervised learning one (in unsupervised learning it is usually called a matching matrix). Each row of the matrix represents the instances in a predicted class while each column represents the instances in an actual class (or vice versa). The name stems from the fact that it makes it easy to see if the system is confusing two classes (i.e. commonly mislabeling one as another).
 
 ## Practice 1
+
 ## Evaluation
+### Instructions
+
+Develop the following instructions in Spark with the Scala programming language, using only the documentation from the Machine Learning Mllib library from Spark and Google.
+
+1. From the Iris.csv dataset found at https://github.com/jcromerohdz/iris, elaborate
+the cleanliness of data necessary to be processed by the following algorithm (Important, this cleaning must be by means of Scala script in Spark).
+- Use Spark's Mllib library the Machine Learning algorithm called multilayer perceptron
+```
+//We import the libraries that we will use in the project 
+
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.ml.classification.MultilayerPerceptronClassifier
+import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
+import spark.implicits._
+import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.feature.StringIndexer
+
+//We load our data from the file to a dataset
+val data = spark.read.format("csv").option("inferSchema","true").option("header","true").csv("iris.csv")
+
+```
+
+2. What are the column names?
+```
+//Show us the columns of the datset
+data.columns
+```
+
+3. How is the scheme?
+``` 
+//we make a printschema to see the structure of the data
+data.printSchema()
+```
+
+4. Print the first 5 columns.
+``` 
+//Show columns
+data.show()
+```
+
+5. Use the describe () method to learn more about the DataFrame data.
+```
+// Function that describes the data
+data.describe().show()
+```
+
+6. Make the relevant transformation for the categorical data which will be
+our labels to classify.
+``` 
+// We generate a vector where the characteristics of the dataset to evaluate will be stored
+// and are awaited through the features column  
+val assembler = new VectorAssembler().setInputCols(Array("sepal_length","sepal_width","petal_length","petal_width")).setOutputCol("features")
+
+// We transform the data using our dataset
+val featureSet = assembler.transform(data)
+
+
+//We transform the categorical values ​​to data numbers to be able to process it 
+val labelIndexer = new StringIndexer().setInputCol("species").setOutputCol("label")
+val dataindex = labelIndexer.fit(featureSet).transform(featureSet)
+
+```
+
+7. Build the classification models and explain your architecture.
+``` 
+// we prepare our training data and test data
+// the test set: training => 60%, test => 40% and seed => 1234L
+val splits = dataindex.randomSplit(Array(0.6, 0.4), seed = 1234L)
+val train = splits(0)
+val test = splits(1)
+
+// We specify the layers of our neural network
+/ * specify layers for neural network
+    Specify the layers for the neural network as follows:
+    input layer => size 4 (characteristics),
+    two intermediate layers (i.e. hidden layer)
+    of size 5 and 4 and output => size 3 (classes). * /
+val layers = Array[Int](4, 5, 4, 3)
+
+// create the MultilayerPerceptronClassifier trainer and set its parameters
+val trainer = new MultilayerPerceptronClassifier().setLayers(layers).setBlockSize(128).setSeed(1234L).setMaxIter(100)
+
+
+/ * Train the multilayer perceptron classification model using the estimator
+Train the multilayer perceptron classification model using the estimator above (
+that is to say, trainer) * /   
+val model = trainer.fit(train)
+
+// We create our computation model to determine our most accurate prediction value 
+val result = model.transform(test)
+val predictionAndLabels = result.select("prediction", "label")
+
+// evaluate the model for prediction performance
+val evaluator = new MulticlassClassificationEvaluator().setMetricName("accuracy")
+
+```
+
+8. Print the model results
+``` 
+// We print the result of the prediction. 
+println(s"Test set accuracy = ${evaluator.evaluate(predictionAndLabels)}")
+```
+
 ## Sources
 - Apache Spark. (n.d.). Extracting, transforming and selecting features - Spark 2.4.5 Documentation. Retrieved June 1, 2020, from [https://spark.apache.org/docs/latest/ml-features#vectorassembler](https://spark.apache.org/docs/latest/ml-features#vectorassembler)
 - Apache Spark. (n.d.-b). ML Pipelines - Spark 2.4.5 Documentation. Retrieved June 1, 2020, from [https://spark.apache.org/docs/latest/ml-pipeline.html](https://spark.apache.org/docs/latest/ml-pipeline.html)
