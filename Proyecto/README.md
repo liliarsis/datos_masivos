@@ -23,7 +23,7 @@ Most industries that deal with large amounts of data have recognized the value o
 <a name="T2"></a>
 # THEORETICAL FRAMEWORK
 
-# Machine Learning algorithm groups:
+## Machine Learning algorithm groups:
 
 1.Supervised learning
 In supervised learning, the machine is taught by example. In this way, the operator provides the machine learning algorithm with a known data set that includes the desired inputs and outputs, and the algorithm must find a method to determine how to get to those inputs and outputs.
@@ -42,7 +42,7 @@ By defining the rules, the machine learning algorithm tries to explore different
 
 Consequently, this system teaches the machine through the trial and error process. Learn from past experiences and begin to adapt your approach in response to the situation to achieve the best possible result.
 
-# Machine Learning algorithms for classification (SVM)
+## Machine Learning algorithms for classification (SVM)
 
 A support vector machine (SVM) is a supervised learning algorithm that can be used for binary classification or regression. Support vector machines are very popular in applications such as natural language processing, speech, image recognition, and machine vision.
 
@@ -57,7 +57,7 @@ The training of a support vector machine consists of two phases:
 
 aqui va la imagen 1 xd
 
-# Decision Three
+## Decision Three
 
 A decision tree is a simple representation to classify examples. It is a supervised machine learning where the data is divided continuously according to a certain parameter.
 
@@ -82,19 +82,54 @@ Decision trees where the target variable can take continuous values ​​(typic
 
 aqui va la 4 
 
+## Logistic Regression
 
-<a name="T1"></a>
+Logistic Regression or Logistic Regression is a classification algorithm that is used to predict the probability of a categorical dependent variable. In logistic regression, the dependent variable is a binary variable that contains data encoded as 1 - 0, yes - no, open - closed, etc.
+
+This binary logistic model is used to estimate the probability of a binary response based on one or more independent or predictive variables. Lets say that the presence of a risk factor increases the probability of a result given a specific percentage.
+
+Like all regression analyzes, logistic regression is predictive analysis. It is used to describe data and explain the relationship between a dependent binary variable and one or more independent nominal, ordinal, interval, or ratio level variables.
+
+Some of the examples of classification problems are spam or not, online transactions fraud or non-fraud, malignant or benign tumor Fig. 5. The logistic regression transforms your output using the logistic sigmoid function to return a probability value.
+
+imagen 5
+
+## Multilayer perceptron
+
+MLPs are forward-facing networks with one or more node layers between the input nodes and the output nodes (Hidden). Each neuron is a perceptron type. Each layer is fully connected to the next layer in the network.
+
+Perceptron Fig. 6: Artificial neuron or basic inference unit in the form of a linear discriminator, from which an algorithm is developed capable of generating a criterion to select a sub-group from a larger group of components.
+
+figura 6 
+
+LAYERS
+The layers can be classified into three types Fig. 7:
+
+1-Input layer: Made up of those neurons that introduce the input patterns into the network. No processing occurs in these neurons.
+2-Hidden layers: Formed by those neurons whose inputs come from previous layers and whose outputs go to neurons from later layers.
+3-Output layer: Neurons whose output values ​​correspond to the outputs of the entire network.
+
+figura 7 
+
+CHARACTERISTICS:
+-An MLP consists of at least three layers of nodes.
+-MLP uses a supervised learning technique called back propagation for training.
+-You can distinguish data that is not linearly separable.
+-It is one of the architectures most used to solve real problems.
+-It tends to work best with deeper architectures and larger networks.
+
+<a name="T3"></a>
+# IMPLEMENTATION
+
+
+<a name="T4"></a>
 # TASK 1
 **INTRODUCTION**
 
-<a name="T1"></a>
+<a name="T5"></a>
 # TASK 1
 **INTRODUCTION**
 
-<a name="T1"></a>
-# TASK 1
-**INTRODUCTION**
-
-<a name="T1"></a>
+<a name="T6"></a>
 # TASK 1
 **INTRODUCTION**
