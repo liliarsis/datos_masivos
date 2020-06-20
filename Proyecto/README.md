@@ -126,6 +126,7 @@ For the comparison of these algorithms we use apache spark, with its extension t
 Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and secure way of writing. Easily integrate functional and object-oriented language features. Thanks to the implementation of this language, we can program an algorithm in a simpler way with a performance that exceeds other languages, because we work through a base with Spark.
 
 Spark version: 2.4.4
+
 Scala version: 2.11.12
 
 <a name="T4"></a>
