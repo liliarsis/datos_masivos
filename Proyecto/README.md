@@ -121,15 +121,36 @@ CHARACTERISTICS:
 <a name="T3"></a>
 # IMPLEMENTATION
 
+For the comparison of these algorithms we use apache spark, with its extension to work with the scala language.
+Scala is a modern multi-paradigm programming language designed to express common programming patterns in a concise, elegant, and secure way of writing. Easily integrate functional and object-oriented language features. Thanks to the implementation of this language, we can program an algorithm in a simpler way with a performance that exceeds other languages, because we work through a base with Spark.
+
+Spark version: 2.4.4
+Scala version: 2.11.12
 
 <a name="T4"></a>
-# TASK 1
-**INTRODUCTION**
+# RESULTS
+
+To carry out this project, the same file was used for the implementation of the 4 different Machine Learning algorithms, of which the iteration of each of these was carried out ten times.
+The following tables show the results as well as the average of each of them.
 
 <a name="T5"></a>
-# TASK 1
-**INTRODUCTION**
+# CONCLUSION
+
+After analyzing the results tables we can conclude that:
+- The average feasibility of the Logistic Regression algorithm is on average 89% which is the best, followed by the Decision Tree algorithm which is very close to it with 88%.
+- Regarding the margin of error we can also see that the Logistic Regression algorithm is smaller, therefore it is more favorable.
+- Regarding the execution time, we can see that Decision Tree performed the iterations in a shorter time.
+
+In this way we can assume that the most favorable algorithm was the Logistic Regression algorithm.
 
 <a name="T6"></a>
-# TASK 1
-**INTRODUCTION**
+# REFERENCES
+
+[1] SAS. (2019). Aprendizaje Automático. Junio 13, 2020, de SAS Institute Inc Sitio web: https://www.sas.com/es_mx/insights/analytics/machine-learning.html#machine-learning-importance 
+[2] Redacción APD. (2019). ¿Cuáles son los tipos de algoritmos del machine learning?. Junio 13, 2020, de APD Sitio web: https://www.apd.es/algoritmos-del-machine-learning/#:~:text=Los%20tres%20 grupos%20de%20algoritmos,no%20supervisado%20y%20por%20refuerzo. 
+[3]MathWorks. (2019). Máquina de vectores de soporte (SVM). Junio 13, 2020, de The MathWorks Inc Sitio web: https://es.mathworks.com/discovery/support-vector-machine.html 
+[4]Afroz Chakure. (2019). Decision Tree Classification. Junio 13, 2020, de Towards data science Sitio web: https://towardsdatascience.com/decision-tree-classification-de64fc4d5aac 
+[5]Gonzalez L.. (2018). Aprendizaje Supervisado: Logistic Regression. Junio 13, 2020, de ligdigonzalez.com Sitio web: https://ligdigonzalez.com/aprendizaje-supervisado-logistic-regression/#:~:text=La%20regresi%C3%B3n%20log%C3%ADstica%20o%20Logistic,de%20una%20variable%20dependiente%20categ%C3%B3rica.&text=Permite%20decir%20que%20la%20presencia,resultado%20dado%20un%20porcentaje%20espec%C3%ADfico. 
+[6]Ayush P.. (2019). Introduction to Logistic Regression. Junio 13, 2020, de towards data science Sitio web: https://towardsdatascience.com/introduction-to-logistic-regression-66248243c148 
+[7] Guillen, J. (2015, julio 19). Perceptrón simple y multicapa. Recuperado 1 de mayo de 2020, de https://es.slideshare.net/Jeffo92/perceptrn-simple-y-multicapa 
+
