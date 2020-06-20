@@ -135,7 +135,7 @@ Scala version: 2.11.12
 To carry out this project, the same file was used for the implementation of the 4 different Machine Learning algorithms, of which the iteration of each of these was carried out ten times.
 The following tables show the results as well as the average of each of them.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura8.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura9.PNG)
 
 <a name="T5"></a>
 # CONCLUSION
