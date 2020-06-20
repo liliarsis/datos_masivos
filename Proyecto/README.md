@@ -3,12 +3,12 @@
 **INDEX**
 
 *Task*
-* [T1.-Task 1, INTRODUCTION](#T1)
-* [T2.-Task 2, THEORETICAL FRAMEWORK](#T2)
-* [T3.-Task 3, IMPLEMENTATION](#T3)
-* [T4.-Task 4, RESULTS](#T4)
-* [T5.-Task 5, CONCLUSION](#T5)
-* [T6.-Task 6, REFERENCES](#T6)
+* [T1.-1, INTRODUCTION](#T1)
+* [T2.-2, THEORETICAL FRAMEWORK](#T2)
+* [T3.-3, IMPLEMENTATION](#T3)
+* [T4.-4, RESULTS](#T4)
+* [T5.-5, CONCLUSION](#T5)
+* [T6.-6, REFERENCES](#T6)
 
 
 <a name="T1"></a>
