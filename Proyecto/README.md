@@ -56,7 +56,7 @@ The training of a support vector machine consists of two phases:
 2-Solve a quadratic optimization problem that fits an optimal hyperplane to classify the transformed characteristics into two classes. The number of transformed features is determined by the number of support vectors.
 
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen1.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura1.PNG)
 
 ## Decision Three
 
@@ -69,19 +69,19 @@ Decision tree consists of:
 
 To understand the concept of Decision Tree, consider the example in Fig. 2. Let's say you want to predict whether a person is fit or not, given their information such as age, eating habits, physical activity, etc. Decision nodes are questions like 'How old are you?', 'Do you exercise?', 'Do you eat a lot of pizzas? And the sheets represent results such as 'pass' or 'fail'.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen2.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura2.PNG)
 
 There are two main types of decision trees:
 1.Classification trees (Yes / No types) Fig. 3:
 What we have seen above is an example of a classification tree, where the result was a variable such as "pass" or "fail". Here the decision variable is categorical / discrete.
 Such a tree is built through a process known as a binary recursive partition. This is an iterative process of dividing the data into partitions and then dividing it into each of the branches.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen3.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura3.PNG)
 
 2.Regression trees (continuous data types):
 Decision trees where the target variable can take continuous values ​​(typically real numbers) are called regression trees. (for example, the price of a house or the length of a patient's stay in a hospital)
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen4.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura4.PNG)
 
 ## Logistic Regression
 
@@ -93,7 +93,7 @@ Like all regression analyzes, logistic regression is predictive analysis. It is 
 
 Some of the examples of classification problems are spam or not, online transactions fraud or non-fraud, malignant or benign tumor Fig. 5. The logistic regression transforms your output using the logistic sigmoid function to return a probability value.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen5.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura5.PNG)
 
 ## Multilayer perceptron
 
@@ -101,7 +101,7 @@ MLPs are forward-facing networks with one or more node layers between the input 
 
 Perceptron Fig. 6: Artificial neuron or basic inference unit in the form of a linear discriminator, from which an algorithm is developed capable of generating a criterion to select a sub-group from a larger group of components.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen6.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura6.PNG)
 
 LAYERS
 The layers can be classified into three types Fig. 7:
@@ -110,7 +110,7 @@ The layers can be classified into three types Fig. 7:
 2-Hidden layers: Formed by those neurons whose inputs come from previous layers and whose outputs go to neurons from later layers.
 3-Output layer: Neurons whose output values ​​correspond to the outputs of the entire network.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen7.PNG) 
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura7.PNG) 
 
 CHARACTERISTICS:
 -An MLP consists of at least three layers of nodes.
@@ -134,7 +134,7 @@ Scala version: 2.11.12
 To carry out this project, the same file was used for the implementation of the 4 different Machine Learning algorithms, of which the iteration of each of these was carried out ten times.
 The following tables show the results as well as the average of each of them.
 
-![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/imagen8.PNG)
+![Grafica1](https://raw.githubusercontent.com/liliarsis/datos_masivos/unit4/imagenes/figura8.PNG)
 
 <a name="T5"></a>
 # CONCLUSION
