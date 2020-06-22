@@ -148,6 +148,7 @@ After analyzing the results tables we can conclude that:
 In this way we can assume that the most favorable algorithm was the Logistic Regression algorithm.
 
 **link of video**
+[https://youtu.be/VSfsXPPDBBgL](https://youtu.be/VSfsXPPDBBg)
 
 <a name="T6"></a>
 # REFERENCES
